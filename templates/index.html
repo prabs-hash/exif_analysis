@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Silkscreen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Oswald:wght@200..700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        font-family: "Silkscreen", serif;
+        
+        background-color: rgb(16, 16, 16);
+      }
+      section {
+        height: 100vh;
+        display: flex;
+        width: 100%;
+        
+      }
+
+      /* Banner Section */
+      .banner {
+        background-color: #646767;
+        color: white;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .banner h1 {
+        margin: 0;
+        font-size: 24px;
+      }
+
+      /* Navigation Bar */
+      .nav-links {
+        display: flex;
+        gap: 20px;
+      }
+
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        transition: color 0.3s;
+      }
+
+      .nav-links a:hover {
+        color: #ffd700;
+      }
+      #spline {
+        background-color: red;
+      }
+      /* Main Content */
+      .main-content {
+        text-align: center;
+        margin: 50px auto;
+        max-width: 800px;
+      }
+
+      .main-content h2 {
+        font-size: 36px;
+        color: #f0eded;
+      }
+
+      .main-content p {
+        font-size: 18px;
+        font-family: "Silkscreen", serif;
+  font-weight: 400;
+  font-style: normal;
+        color: #949090;
+        line-height: 1.6;
+      }
+      .left {
+        width: 50%;
+      }
+      .right {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .main-content button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-family: "Silkscreen", serif;
+        background-color: #af2222;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      .main-content button:hover {
+        background-color: #151513;
+      }
+
+   
+    
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+      <h1>Metadata Extraction</h1>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <section>
+      <div class="left">
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.54/build/spline-viewer.js"></script>
+<spline-viewer url="https://prod.spline.design/uMuxt8lqDj-3gxuw/scene.splinecode"></spline-viewer>
+      </div>
+      <div class="right">
+        <!-- Banner -->
+
+        <!-- Main Content -->
+        <div class="main-content" id="home">
+          <h2>Exif Data Analysis Tool</h2>
+          <p>
+            Easily extract and analyze Exif data from files and folders using our
+            tool. Upload an entire folder, and get detailed information in a
+            format of your choice!
+          </p>
+          <button onclick="redirectToUpload()">Get Started</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <div class="main-content" id="about">
+      <h2>About Us</h2>
+      <p>
+        Our tool is designed to simplify metadata extraction for various types
+        of files, including images, videos, and documents. It’s efficient,
+        user-friendly, and saves your output in a well-organized format.
+      </p>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="main-content" id="contact">
+      <h2>Contact Us</h2>
+      <p>
+        Have questions or feedback? We’d love to hear from you. Reach out to us
+        at:
+        <br /><br />
+        <strong>Email:</strong> support@metadataextractor.com <br />
+        <strong>Phone:</strong> +1 (234) 567-8900
+      </p>
+    </div>
+    <!-- Footer -->
+    <!-- <div class="footer">
+      &copy; 2024 Metadata Extraction Tool. All rights reserved.
+    </div> -->
+
+    <script>
+      function redirectToUpload() {
+        window.location.href = "/upload";
+      }
+    </script>
+  </body>
+</html>
